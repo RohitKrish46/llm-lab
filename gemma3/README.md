@@ -1,4 +1,4 @@
-# gemma3-270m
+# Gemma3-270m
 This repository provides a cleanroom implementation of the Gemma3 270M architecture in PyTorch. The code is structured to highlight key components and architectural choices, making it easy to understand and experiment with. It features a custom Gemma3Model class built from scratch, showcasing the unique elements of the Gemma3 design, such as Grouped Query Attention (GQA), SwiGLU-style FeedForward Networks, and a hybrid of sliding and full attention.
 
 ## Key Features
@@ -14,6 +14,10 @@ Gemma3 Specifics: The code accurately replicates core architectural features, in
 - **Sliding Window Attention**: A hybrid attention approach that combines a limited-size sliding window with a global attention mechanism, as seen in the provided code.
 
 - **Clear and Modular Code**: Each core component—FeedForward, RMSNorm, GroupedQueryAttention, and TransformerBlock—is implemented as a separate PyTorch module, promoting readability and reusability.
+
+## Gemma3 Architecture
+<img width="1003" height="834" alt="image" src="https://github.com/user-attachments/assets/ac004b9b-5ec3-4c7d-b9e9-f80654153ae9" />
+
 
 ## Architectural Insights
 Gemma3 employs several advanced techniques to achieve its efficiency and performance.
